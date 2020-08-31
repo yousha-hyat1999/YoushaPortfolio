@@ -1,0 +1,2 @@
+# YoushaPortfolio
+It's a website on myself containing a login with username and password entries as well as an option to change the password in case it was forgotten. It also contains a subscription form that sends a confirmation email to the user if the user is subscribed with a file containing all subscriptions. It also contains the following pages: My hobbies, my favourite TV shows and video games and a page about me.
