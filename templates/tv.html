@@ -1,0 +1,271 @@
+{% extends 'Base.html'%}
+
+<head xmlns="http://www.w3.org/1999/html">
+{#    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">#}
+</head>
+{% block content%}
+    <style>
+    html,body{
+        overflow-x: hidden;
+        background-color: black;
+    }
+    .container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+
+
+/* Centered text */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+    .font-style{
+        font-style: italic;
+    }
+    /* Three columns side by side */
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+/* Display the columns below each other instead of side by side on small screens */
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+/* Add some shadows to create a card effect */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Some left and right padding inside the container */
+.container {
+  padding: 0 16px;
+}
+
+/* Clear floats */
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+</style>
+  <div class="row">
+   <div class="col-xs-6">
+     <div class="container">
+  <img src="/static/t4.jpg" style="width:123%;">
+
+
+</div>
+     </div>
+   </div>
+
+ </div>
+
+
+
+
+<!-- Fixed Background -->
+<figure>
+    <div class="fix-wrap">
+        <div id="fixed">
+
+        </div>
+    </div>
+</figure>
+<!-- Meet the team -->
+<div class=" container-fluid padding">
+    <div class="row welcome text-center">
+        <div class=" col-12">
+            <h1 class="display-4">My favourite TV shows/Movies</h1>
+        </div>
+        <hr>
+        <div class ="col-12">
+            <p class="lead"></p>
+
+        </div>
+    </div>
+</div>
+
+<!-- cards >
+<div class="container-fluid padding">
+    <div class="row padding">
+        <div class="col-md-4">
+            <img class="card-imd-top"  src="/static/img/j.cole.jpg">
+
+
+        </div>
+    </div>
+</div-->
+<div class="container-fluid padding">
+    <div class="row padding">
+    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-3">
+<div class="card" style="width: 18rem;">
+  <img class="card-img-top" src="/static/TVpics/got.jpg" alt="Card image cap" style="width:285px;height:200px" >
+  <div class="card-body">
+      <h5 class="card-title">Game of Thrones<br> (Show)</h5>
+    <p class="card-text">Game of Thrones is an American fantasy drama television series created by David Benioff and D. B. Weiss for HBO.
+        It is an adaptation of A Song of Ice and Fire, George R. R. Martin's series of fantasy novels, the first of which is A Game of Thrones.</p>
+    <a href="https://en.wikipedia.org/wiki/Game_of_Thrones" class="btn btn-success">Learn more</a>
+      </div>
+  </div>
+
+</div>
+        <div class="col-sm-6 col-md-6 col-lg-6 col-xl-3">
+<div class="card" style="width: 18rem;">
+  <img class="card-img-top" src="/static/TVpics/lotr.jpg" alt="Card image cap" style="width:285px;height:200px" >
+  <div class="card-body">
+    <h5 class="card-title">Lord of the Rings <br>(Movie)</h5>
+    <p class="card-text">The Lord of the Rings is an epic[1] high-fantasy novel written by English author and scholar J. R. R. Tolkien.
+        The story began as a sequel to Tolkien's 1937 fantasy novel The Hobbit, but eventually developed into a much larger work.</p>
+    <a href="https://en.wikipedia.org/wiki/The_Lord_of_the_Rings" class="btn btn-success">Learn More</a>
+      </div>
+  </div>
+
+</div>
+        <div class="col-sm-6 col-md-6 col-lg-6 col-xl-3">
+<div class="card" style="width: 18rem;">
+  <img class="card-img-top" src="/static/TVpics/hp.jpg" alt="Card image cap" style="width:285px;height:200px">
+  <div class="card-body">
+    <h5 class="card-title">Harry Potter <br>(Movie)</h5>
+    <p class="card-text">Harry Potter is a series of fantasy novels written by British author J. K. Rowling.
+        The novels chronicle the lives of a young wizard, Harry Potter, and his friends Hermione Granger and Ron Weasley,
+        all of whom are students at Hogwarts School of Witchcraft and Wizardry.</p>
+    <a href="https://en.wikipedia.org/wiki/Harry_Potter" class="btn btn-success">Learn More</a>
+      </div>
+  </div>
+
+</div>
+        <div class="col-sm-6 col-md-6 col-lg-6 col-xl-3">
+<div class="card" style="width: 18rem;">
+  <img class="card-img-top" src="/static/TVpics/lk.jpg" alt="Card image cap" style="width:285px;height:200px">
+  <div class="card-body">
+    <h5 class="card-title">The Last Kingdom <br>(Show)</h5>
+    <p class="card-text">The Last Kingdom is a British historical fiction television series based on Bernard Cornwell's The Saxon Stories series of novels.
+        The first series of eight episodes premiered on 10 October 2015 on BBC America, and on BBC Two in the UK on 22 October 2015.</p>
+    <a href="https://en.wikipedia.org/wiki/The_Last_Kingdom_(TV_series)" class="btn btn-success">Learn More</a>
+      </div>
+  </div>
+
+</div>
+</div><br><br>
+
+    </div>
+
+    <div class="container-fluid padding">
+     <div class="row padding">
+<div class="col-sm-6 col-md-6 col-lg-6 col-xl-3">
+<div class="card" style="width: 18rem;">
+  <img class="card-img-top" src="/static/TVpics/av2.jpg" alt="Card image cap" style="width:285px;height:200px" >
+  <div class="card-body">
+    <h5 class="card-title">Avengers: Endgame<br>(Movie)</h5>
+    <p class="card-text">Avengers: Endgame is a 2019 American superhero film based on the Marvel Comics superhero team the Avengers,
+        produced by Marvel Studios and distributed by Walt Disney Studios Motion Pictures. It is the sequel to 2012's The Avengers, 2015's Avengers: Age of Ultron,</p>
+    <a href="https://en.wikipedia.org/wiki/Avengers:_Endgame" class="btn btn-success">Learn More</a>
+      </div>
+  </div>
+
+</div>
+    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-3">
+<div class="card" style="width: 18rem;">
+  <img class="card-img-top" src="/static/TVpics/bp.jpg" alt="Card image cap" style="width:285px;height:200px">
+  <div class="card-body">
+    <h5 class="card-title">Black Panther<br>(Movie)</h5>
+    <p class="card-text">Black Panther is a 2018 American superhero film based on the Marvel Comics character of the same name.
+        Produced by Marvel Studios and distributed by Walt Disney Studios Motion Pictures, it is the 18th film in the Marvel Cinematic Universe (MCU). The film is directed by Ryan Coogler</p>
+    <a href="https://en.wikipedia.org/wiki/Black_Panther_(film)" class="btn btn-success">Learn More</a>
+      </div>
+  </div>
+    </div>
+               <div class="col-sm-6 col-md-6 col-lg-6 col-xl-3">
+<div class="card" style="width: 18rem;">
+  <img class="card-img-top" src="/static/TVpics/gotham.jpg" alt="Card image cap" style="width:285px;height:200px">
+  <div class="card-body">
+    <h5 class="card-title">Gotham <br>(Show)</h5>
+    <p class="card-text">Gotham is an American action crime drama television series developed by Bruno Heller, produced by Warner Bros.
+        Television and based on characters published by DC Comics and appearing in the Batman franchise, primarily those of James Gordon and Bruce Wayne.</p>
+    <a href="https://en.wikipedia.org/wiki/Gotham_(TV_series)" class="btn btn-success">Learn More</a>
+      </div>
+  </div>
+
+</div>
+               <div class="col-sm-6 col-md-6 col-lg-6 col-xl-3">
+<div class="card" style="width: 18rem;">
+  <img class="card-img-top" src="/static/TVpics/dk.jpg" alt="Card image cap" style="width:285px;height:200px">
+  <div class="card-body">
+    <h5 class="card-title">The Dark Knight Rises <br>(Movie)</h5>
+    <p class="card-text">The Dark Knight Rises is a 2012 superhero film directed by Christopher Nolan, who co-wrote the screenplay with his brother Jonathan Nolan, and the story with David S. Goyer.
+        Based on the DC Comics character Batman, the film is the final installment in Nolan's The Dark Knight Trilogy.</p>
+    <a href="https://en.wikipedia.org/wiki/The_Dark_Knight_Rises" class="btn btn-success">Learn More</a>
+      </div>
+  </div>
+
+</div>
+</div><br><br>
+
+    </div>
+     <div class="container-fluid padding">
+         <div class="row padding">
+             <div class="col-sm-6 col-md-6 col-lg-6 col-xl-3">
+<div class="card" style="width: 18rem;">
+  <img class="card-img-top" src="/static/TVpics/att.jpeg" alt="Card image cap" style="width:285px;height:200px" >
+  <div class="card-body">
+    <h5 class="card-title">Attack on Titans <br>(Anime)</h5>
+    <p class="card-text">Attack on Titan (Japanese: 進撃の巨人, Hepburn: Shingeki no Kyojin, lit. "The Attacking Giants") is a Japanese manga series both written and illustrated by Hajime Isayama.
+        It is set in a fantasy world where humanity lives within territories surrounded by three enormous walls </p>
+    <a href="https://en.wikipedia.org/wiki/Attack_on_Titan" class="btn btn-success">Learn More</a>
+      </div>
+  </div>
+
+</div>
+                            <div class="col-sm-6 col-md-6 col-lg-6 col-xl-3">
+<div class="card" style="width: 18rem;">
+  <img class="card-img-top" src="/static/TVpics/hxh.jpg" alt="Card image cap" style="width:285px;height:200px">
+  <div class="card-body">
+    <h5 class="card-title">Hunter x Hunter <br>(Anime)</h5>
+    <p class="card-text">Hunter × Hunter (Japanese: ハンター×ハンター, Hepburn: Hantā Hantā) is a Japanese manga series written and illustrated by Yoshihiro Togashi.
+        It has been serialized in Weekly Shōnen Jump magazine since March 16, 1998, although the manga has frequently gone on extended hiatuses since 2006..</p>
+    <a href="https://en.wikipedia.org/wiki/Hunter_%C3%97_Hunter" class="btn btn-success">Learn More</a>
+      </div>
+  </div>
+
+</div>
+             <div class="col-sm-6 col-md-6 col-lg-6 col-xl-3">
+<div class="card" style="width: 18rem;">
+  <img class="card-img-top" src="/static/TVpics/pun.jpg" alt="Card image cap" style="width:285px;height:200px">
+  <div class="card-body">
+    <h5 class="card-title">The Punisher<br> (Show)</h5>
+    <p class="card-text">Marvel's The Punisher, or simply The Punisher, is an American web television series created for Netflix by Steve Lightfoot, based on the Marvel Comics character of the same name.
+        It is set in the Marvel Cinematic Universe (MCU), sharing continuity with the films and other television series...</p>
+    <a href="https://en.wikipedia.org/wiki/The_Punisher_(TV_series)" class="btn btn-success">Learn More</a>
+      </div>
+  </div>
+
+</div>
+                            <div class="col-sm-6 col-md-6 col-lg-6 col-xl-3">
+<div class="card" style="width: 18rem;">
+  <img class="card-img-top" src="/static/TVpics/trans.png" alt="Card image cap" style="width:285px;height:200px">
+  <div class="card-body">
+    <h5 class="card-title">The Transformers <br>(Movie)</h5>
+    <p class="card-text">Transformers is a series of American science fiction action films based on the Transformers franchise which began in the 1980s. Michael Bay has directed the first five films:
+        Transformers (2007), Revenge of the Fallen (2009), Dark of the Moon (2011), Age of Extinction (2014)...</p>
+    <a href="https://en.wikipedia.org/wiki/Transformers_(film_series)" class="btn btn-success">Learn More</a>
+      </div>
+  </div>
+
+</div>
+         </div>
+     </div><br><br>
+{% endblock %}

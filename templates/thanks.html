@@ -1,0 +1,26 @@
+{% extends 'Base.html'%}
+{% block content%}
+    <style>
+  html,body{
+        overflow-x: hidden;
+        background-image: url("/static/Gpics/dest2.jpg");
+        {#background-color: #3E3A39;#}
+    }
+</style>
+    <br><br><br>
+    <div class="container">
+    <center><div class="header"><h1>Thank you for subscribing</h1></div></center>
+    <center><small>Here's your information</small></center>
+    <br/><br/>
+
+    <ul style="color: white">
+        {% for subscriber in subscribers %}
+        <li> {{ subscriber }}</li>
+
+       {% endfor %}
+    </ul>
+    </div>
+    <br><br>
+    <center><a href="/table" class="btn btn-default btn-lg text-light" role= "button">See table of subscribers</a></center>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+{% endblock %}

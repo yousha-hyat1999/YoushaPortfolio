@@ -1,0 +1,43 @@
+{% extends 'Base.html'%}
+
+{% block content%}
+<style>
+  html,body{
+        overflow-x: hidden;
+        background-image: url("/static/Gpics/dest2.jpg");
+        {#background-color: #3E3A39;#}
+    }
+</style>
+<br><br><br><br><br>
+<div class="container">
+<center><h2 style="color:black;"> Subscribe to my Portfolio and I'll get in touch with you shortly</h2></center>
+</div>
+<br/> <br/>
+    <center>
+    <div class="col-sm-6">
+
+
+    <form action="/thanks" method="POST">
+  <div class="form-group">
+
+    <input type="text" style="background-color: transparent" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="First Name" name="first_name">
+    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+  </div>
+<div class="form-group">
+
+    <input type="text" style="background-color: transparent" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Last Name" name="last_name">
+    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+  </div>
+        <div class="form-group">
+
+    <input type="email" style="background-color: transparent" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email Address" name="email">
+    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+  </div>
+    <br/><br>
+  <center><button type="submit" style="background-color: transparent" class="btn btn-secondary">Submit</button></center>
+</form>
+        </div>
+        </center>
+    <br><br><br><br><br>
+
+{% endblock %}

@@ -1,0 +1,99 @@
+{% import "bootstrap/wtf.html" as wtf %}
+
+<html>
+    <head>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/log.css') }}">
+    </head>
+
+    <body>
+        <div class="bg1">
+            <div class="header"><div>Yousha's Portfolio</div></div>
+        <div class="inthemiddle">
+          <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+        </div>
+
+
+        <div id="id01" class="modal">
+
+{#            <form class="modal-content animate" action="/action_page.php" method="post">#}
+            <form class="modal-content animate" method="POST" action="/">
+            <div class="imgcontainer">
+                <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                <img src="/static/aa.jpg" alt="Avatar" class="avatar">
+            </div>
+
+            <div class="container">
+{#                <label for="uname"><b>Username</b></label>#}
+{#                <input type="text" placeholder="Enter Username" name="uname" required>#}
+
+                {{  form.hidden_tag() }}
+                {{  wtf.form_field(form.username) }}
+{#                <label for="psw"><b>Password</b></label>#}
+{#                <input type="password" placeholder="Enter Password" name="psw" required>#}
+
+                {{ wtf.form_field(form.password) }}
+
+{#                <button type="submit">Login</button>#}
+                <center><input type="button" onclick="check(this.form)" value="login"/></center>
+            </div>
+
+        <div class="container" style="background-color: #F4D4F4">
+
+            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+            <div class="psw"><button onclick="forgotPswd()">Forgot Password?</button></div>
+{#            <div class="psw"><input type="button" onclick="forgotPswd()" value="Forgot password?"/></div>#}
+
+        </div>
+        </form>
+        </div>
+
+        <script language="javascript">
+            var pswrd = "yh1234";
+            function forgotPswd(){
+                pswrd = prompt("Please enter your new password")
+                if (pswrd == null || pswrd == "")
+                    alert("User cancelled the prompt")
+            }
+            function check(form){
+                if (form.username.value == "yousha" && form.password.value == pswrd){
+                    window.open("/Home")
+                }
+                else{
+                    alert("The username and password entered don't match!")
+                }
+            }
+
+        </script>
+
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+        </div>
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>

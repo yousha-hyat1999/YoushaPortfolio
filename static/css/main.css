@@ -1,0 +1,72 @@
+
+        body, html {
+        height: 100%;
+        margin: 0;
+            overflow-x: hidden;
+        }
+
+        .bg {
+        /* The image used */
+        background-image: url("/static/b.jpg");
+
+        /* Full height */
+        height: 100%;
+
+        /* Center and scale the image nicely */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        }
+        .c{
+            margin-left: 0px;
+            margin-bottom: 50px;
+            margin-top: 80px;
+            margin-right: 200px;
+        }
+
+        .footer{
+        padding-top: 10px;
+        padding-right: 30px;
+        padding-bottom: 10px;
+        padding-left: 30px;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: #3E3A39;
+        color: white;
+        text-align: center;
+        }
+
+        .background {
+        /* The image used */
+        background-image: url("/static/bc.jxr");
+
+        /* Full height */
+        height: 100%;
+
+        /* Center and scale the image nicely */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        }
+
+        .paragraph{
+        padding-top: 10px;
+        padding-right: 10px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+        }
+        /*.p{*/
+        /*    margin-left: 0px;*/
+        /*    margin-bottom: 150px;*/
+        /*    margin-top: 200px;*/
+        /*    margin-right: 0px;*/
+
+        /*}*/
+        .fa {
+        padding: 20px;
+        font-size: 20px;
+        width: 20px;
+        text-align: center;
+        text-decoration: none;
+        }

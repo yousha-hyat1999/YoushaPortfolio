@@ -1,0 +1,265 @@
+{% extends 'base.html'%}
+{% block content%}
+
+<style>
+body{
+    overflow-x: hidden;
+    background-color: #888888;
+}
+
+.flip-box {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  border: 1px solid #000000;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-box-front {
+  background-color: #bbb;
+  color: black;
+}
+
+
+.flip-box-back {
+  background-color: white;
+  color: black;
+  transform: rotateY(180deg);
+}
+
+</style>
+<div class="row">
+   <div class="col-xs-6">
+     <div class="container">
+  <img src="/static/Gpics/vg.jpg" style="width:145%;">
+
+
+</div>
+     </div>
+   </div>
+
+ </div>
+
+<figure>
+    <div class="fix-wrap">
+        <div id="fixed">
+
+        </div>
+    </div>
+</figure>
+
+
+<div class=" container-fluid padding">
+    <div class="row welcome text-center">
+        <div class=" col-12">
+            <h1 class="display-4">My Favourite Video Games</h1>
+        </div>
+        <hr>
+        <div class ="col-12">
+            <p class="lead">Flip for more details</p>
+
+        </div>
+    </div>
+</div>
+    <div class="container-fluid padding">
+    <div class="row padding">
+         <div class="col-sm-6 col-md-6 col-lg-6 col-xl-3">
+<div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+      <img src="/static/Gpics/bo1.jpg" alt="Paris" style="width:300px;height:200px">
+    </div>
+    <div class="flip-box-back">
+      <h4>Call of Duty: Black Ops 1</h4>
+      <p>"Call of Duty: Black Ops 1" is my favourite game of all time. It was divided into 3 different game modes: Campaign,
+          Multiplayer and Zombies. All 3 game modes were phenomenal.</p>
+    </div>
+  </div>
+</div>
+         </div>
+        <div class=" col-sm-6 col-md-6 col-lg-6 col-xl-3">
+<div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+      <img src="/static/Gpics/bo2.jpg" alt="Paris" style="width:300px;height:200px">
+    </div>
+    <div class="flip-box-back">
+      <h4>Call of Duty: Black Ops 2</h4>
+      <p>"Call of Duty: Black Ops 2" is one of my favourite games. It was also divided into 3 different game modes: Campaign,
+          Multiplayer and Zombies. All 3 game modes were phenomenal as well.</p>
+    </div>
+  </div>
+</div>
+         </div>
+        <div class="col-sm-6 col-md-6 col-lg-6 col-xl-3">
+<div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+      <img src="/static/Gpics/bo3.jpg" alt="Paris" style="width:300px;height:200px">
+    </div>
+    <div class="flip-box-back">
+      <h4>Call of Duty: Black Ops 3</h4>
+      <p>"Call of Duty: Black Ops 3" is one of my favourite games. It was also divided into 3 different game modes: Campaign,
+          Multiplayer and Zombies. All 3 game modes were phenomenal as well, zombies being better than the prior games.</p>
+    </div>
+  </div>
+</div>
+         </div>
+        <div class=" col-sm-6 col-md-6 col-lg-6 col-xl-3">
+<div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+      <img src="/static/Gpics/mine.png" alt="Paris" style="width:300px;height:200px">
+    </div>
+    <div class="flip-box-back">
+      <h4>Minecraft</h4>
+      <p> In Minecraft, players explore a blocky, procedurally-generated 3D world, and may discover and extract raw materials,
+          craft tools, build structures or earthworks, and depending on game mode, can fight computer-controlled "mobs" and players.</p>
+    </div>
+  </div>
+</div>
+         </div>
+    </div><br><br>
+     <div class="row padding">
+         <div class="col-sm-6 col-md-6 col-lg-6 col-xl-3">
+<div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+      <img src="/static/Gpics/ac.jpg" alt="Paris" style="width:300px;height:200px">
+    </div>
+    <div class="flip-box-back">
+      <h4>Batman: Arkham City</h4>
+      <p>The game is presented from the third-person perspective with a primary focus on Batman's combat and stealth abilities, detective skills,
+          and gadgets that can be used in both combat and exploration. Batman can freely move around Arkham City.</p>
+    </div>
+  </div>
+</div>
+         </div>
+        <div class=" col-sm-6 col-md-6 col-lg-6 col-xl-3">
+<div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+      <img src="/static/Gpics/ak2.jpeg" alt="Paris" style="width:300px;height:200px">
+    </div>
+    <div class="flip-box-back">
+      <h4>Batman: Arkham Knight</h4>
+      <p>The game is presented from a third-person perspective, with a primary focus on Batman's melee combat, stealth abilities,
+          detective skills, and gadgets. Batman can freely move around the open world of Gotham City.</p>
+    </div>
+  </div>
+</div>
+         </div>
+        <div class=" col-sm-6 col-md-6 col-lg-6 col-xl-3">
+<div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+      <img src="/static/Gpics/fort.jpg" alt="Paris" style="width:300px;height:200px">
+    </div>
+    <div class="flip-box-back">
+      <h4>Fortnite</h4>
+      <p>Fortnite is an online video game developed by Epic Games and released in 2017.
+          It is available in three distinct game mode versions that otherwise share the same general gameplay and game engine.</p>
+    </div>
+  </div>
+</div>
+         </div>
+        <div class=" col-sm-6 col-md-6 col-lg-6 col-xl-3">
+<div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+      <img src="/static/Gpics/un2.jpg" alt="Paris" style="width:300px;height:200px">
+    </div>
+    <div class="flip-box-back">
+      <h4>Uncharted 2: Among Thieves</h4>
+      <p>Uncharted 2 is an action-adventure platform video game played from a third-person view, with the player in control of Nathan Drake.
+          Drake is physically adept and is able to jump, climb, and scale narrow ledges and wall-faces to get between points.</p>
+    </div>
+  </div>
+</div>
+         </div>
+    </div><br><br>
+     <div class="row padding">
+         <div class="col-sm-6 col-md-6 col-lg-6 col-xl-3">
+<div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+      <img src="/static/Gpics/un3.jpg" alt="Paris" style="width:300px;height:200px">
+    </div>
+    <div class="flip-box-back">
+      <h4>Uncharted 3: Drake's Deception</h4>
+      <p>Uncharted 3: Drake's Deception is an action-adventure platform video game played from a third-person perspective,
+          with the player in control of Nathan Drake.</p>
+    </div>
+  </div>
+</div>
+         </div>
+        <div class=" col-sm-6 col-md-6 col-lg-6 col-xl-3">
+<div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+      <img src="/static/Gpics/rb6.jpg" alt="Paris" style="width:300px;height:200px">
+    </div>
+    <div class="flip-box-back">
+      <h4>Tom Clancy's Rainbow Six Siege</h4>
+      <p> Tom Clancy's Rainbow Six Siege is a first-person shooter game, in which players utilize many different operators from the Rainbow team with
+      different gadgets and abilities.</p>
+    </div>
+  </div>
+</div>
+         </div>
+        <div class=" col-sm-6 col-md-6 col-lg-6 col-xl-3">
+<div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+      <img src="/static/Gpics/dest2.jpg" alt="Paris" style="width:300px;height:200px">
+    </div>
+    <div class="flip-box-back">
+      <h4>Destiny 2</h4>
+      <p>Similar to its predecessor, Destiny 2 is a first-person shooter game that incorporates role-playing and massively multiplayer online game (MMO) elements.</p>
+    </div>
+  </div>
+</div>
+         </div>
+        <div class="col-sm-6 col-md-6 col-lg-6 col-xl-3">
+<div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+      <img src="/static/Gpics/apex.jpg" alt="Paris" style="width:300px;height:200px">
+    </div>
+    <div class="flip-box-back">
+      <h2>Apex Legends</h2>
+      <p>Apex Legends is an online multiplayer battle royale game featuring squads of three players using pre-made characters
+          (called "Legends"), similar to those of hero shooters.</p>
+    </div>
+  </div>
+</div>
+         </div>
+    </div>
+    </div><br><br>
+
+    {% endblock %}

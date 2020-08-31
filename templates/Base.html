@@ -1,0 +1,63 @@
+<html>
+
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA_Compatible" content="IE=edge">
+        <meta name="Viewport" content="width = device-width, initial scale=1">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+        <!--BOOTSTRAP link-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="stylesheet.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>Yousha's website</title>
+    </head>
+
+    <body>
+            <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top ">
+        <div class="container-fluid ">
+             <button class ="navbar-toggler" type="button" data-toggle="collapse"
+     data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+             <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                 <div class="navbar-nav ml-auto">
+                <a href="/Home" class="btn btn-default btn-lg text-light" role= "button">Home</a>
+                <a href="/Portfolio" class="btn btn-default btn-lg text-light" role= "button">Portfolio</a>
+                <a href="/AboutMe" class="btn btn-default btn-lg text-light" role= "button">About Me</a>
+                <a href="/Hobbies" class="btn btn-default btn-lg text-light" role= "button">Hobbies</a>
+                <a href="/subscribe" class="btn btn-default btn-lg text-light" role= "button">Subscribe</a>
+                <a href="/" class="btn btn-default btn-lg text-light" role= "button">Log out</a>
+                     </div>
+             </div>
+        </div>
+            </nav>
+
+        <!--/div-->
+        {% block content %} {% endblock %}
+
+        <div class="footer"><center><h2>Contact Info</h2></center>
+            <p>Yousha Hyatoolla</p>
+            <p>Phone Number: (514) 965-2099</p>
+            <p>Email: <a href="mailto:youshahayat@hotmail.com">youshahayat@hotmail.com</a></p>
+            <a href="https://www.facebook.com/yousha.hyatoolla.9" class="fa fa-facebook"></a>
+            <a href="https://twitter.com/YoushaHyatoolla" class="fa fa-twitter"></a>
+            <a href="https://www.instagram.com/yousha_hyat/" class="fa fa-instagram"></a>
+        </div>
+
+
+
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    </body>
+
+
+
+
+
+
+
+
+</html>
